@@ -1,0 +1,16 @@
+1)vs code emmet çalışmıyor çözümü:
+                1) arama yerine emmet yaz
+                2) Include Languages kısmında Öge ekleye tıklayıp öge kısmına nunjucks, değer kısmına HTML
+                3) VS CODE YENİDEN BAŞLAT
+
+
+2) Django migrations ve cache oto temizleme
+
+                find . | grep -E "(__pycache__|\.pyc|\.pyo$|migrations)" | xargs rm -rf
+
+
+3) Port Already in use çözümleri
+
+                sudo fuser -k 8000/tcp
+
+                sudo lsof -t -i tcp:8000 | xargs kill -9
